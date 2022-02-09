@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+:root {
+    --font1: 'Comforter', cursive;
+    --font2: 'IBM Plex Mono', monospace;
+    --font3: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: yellow;
+}
+
+
+/* Utility Classes */
+
+.align {
+    vertical-align: middle;
+}
+
+.bt {
+    border-top: 1px solid black;
+}
+
+.bb {
+    border-bottom: 1px solid black;
+}
+
+.br {
+    border-right: 1px solid black;
+}
+
+.bl {
+    border-left: 1px solid black;
+}
+
+
+/* Navigation Bar */
+
+nav {
+    background-color: black;
+    color: white;
+    height: 4.5em;
+    display: flex;
+    align-items: center;
+}
+
+nav section {
+    font-family: var(--font1);
+    letter-spacing: 3px;
+    font-size: 2em;
+    padding: 30px;
+}
+
+
+/* Tic Tac Toe Gaming Module */
+
+.container {
+    padding: 0 2vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.container div {
+    flex: 1 1;
+    justify-content: center;
+}
+
+
+/* Left Section  */
+
+
+/* Game Information  */
+
+#heading1 {
+    font-size: 3vw;
+    font-family: var(--font2);
+    padding: 10px 0 0 0;
+}
+
+#heading2 {
+    font-size: 1.3vw;
+    font-family: var(--font2);
+    color: rgb(90, 90, 90);
+}
+
+
+/* GamePlay */
+
+.gameContainer {
+    font-family: var(--font3);
+    margin: 6vw;
+    display: grid;
+    grid-template-rows: repeat( 3, 7vw);
+    grid-template-columns: repeat(3, 7vw);
+}
+
+.box {
+    font-size: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.box:hover {
+    background-color: rgb(194, 135, 248);
+}
+
+
+/* Right Section */
+
+#Right {
+    text-align: center;
+}
+
+
+/* Instance Information */
+
+#gameInstanceInfo {
+    margin: 10px 0;
+}
+
+#gameInstanceInfo img {
+    height: 2vw;
+    margin: 0 10px
+}
+
+#gameInstanceInfo span {
+    font-family: var(--font2);
+    display: inline-block;
+    font-size: 2vw;
+}
+
+#reset {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    height: 2em;
+    width: 10vw;
+    transition: 0.4s ease;
+}
+
+#reset:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+
+/* Right Image Information */
+
+#astronautImage {
+    width: 28vw;
+}
